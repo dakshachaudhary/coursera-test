@@ -1,0 +1,165 @@
+.homeContainer {
+  margin-top: 60px;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+}
+
+.tweetsContainer {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  padding: 3px;
+  /* border: 1px solid rgb(47, 51, 54); */
+}
+
+/* .tweetsWrapper {
+  height: 55%;
+  overflow: scroll;
+} */
+
+.userTweet {
+  height: 30%;
+  width: 90%;
+  margin: 5% auto 0%;
+  border: 1px solid rgb(47, 51, 54);
+  display: flex;
+}
+
+.userWrapper {
+  width: 100px;
+  height: 100%;
+  padding: 3%;
+}
+
+.userImage {
+  padding: 3%;
+  margin: 0px 15px;
+
+  /* border: 1px solid rgb(47, 51, 54); */
+}
+
+.postWrapper {
+  padding: 2%;
+  padding-left: 0%;
+  width: 100%;
+  display: flex;
+  row-gap: 5px;
+  flex-direction: column;
+}
+.postWrapper textarea {
+  height: 58%;
+  padding: 2%;
+  font-size: 1.5em;
+}
+.postWrapper textarea:focus-visible {
+  outline: none;
+}
+.postWrapper input {
+  width: 17%;
+  height: 30%;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.5em;
+  background-color: var(--blue-color);
+  align-self: flex-end;
+}
+
+.postWrapper input:hover {
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+
+.tweetsRepliesWrapper {
+  /* border: 1px solid rgb(47, 51, 54); */
+  margin: 15px auto;
+}
+
+.tweet {
+  height: 30%;
+  width: 90%;
+  margin: auto;
+  border: 1px solid rgb(47, 51, 54);
+  display: flex;
+}
+
+.tweetImage {
+  padding: 1% 3%;
+}
+
+.detailsWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.optionsWrapper {
+  display: flex;
+  column-gap: 5px;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+
+.optionsWrapper img {
+  cursor: pointer;
+}
+
+.likesWrapper {
+}
+
+.details {
+  height: 20%;
+  width: 90%;
+  display: flex;
+  column-gap: 5%;
+  margin: 3% 0px;
+}
+.details span {
+  width: auto;
+}
+
+.message {
+  width: 90%;
+  margin-bottom: 5px;
+  border: 1px solid rgb(47, 51, 54); /*#2F3336*/
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.replies {
+  width: 90%;
+  height: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.tweetsRepliesWrapper input[type="checkbox"] {
+  width: 100%;
+  margin: auto;
+  display: none;
+}
+
+.labelWrapper {
+  width: 90%;
+  text-align: center;
+  border: 1px solid rgb(47, 51, 54);
+  margin: auto;
+}
+
+.tweetsRepliesWrapper input[type="checkbox"]:checked ~ .labelWrapper label img {
+  transform: rotate(180deg);
+}
+
+.tweetsRepliesWrapper input[type="checkbox"]:checked ~ .replies {
+  height: auto;
+}
+
+.reply {
+  border: 1px solid rgb(47, 51, 54);
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
